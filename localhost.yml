@@ -1,0 +1,69 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  sudo: no
+  vars:
+    homebrew_taps:
+      - altkatz/gcc_cross_compilers
+      - aspnet/dnx
+      - caskroom/cask
+      - fnichol/dvm
+      - homebrew/binary
+      - homebrew/dupes
+      - homebrew/science
+      - jubatus/jubatus
+      - motemen/ghq
+      - tcnksm/ghr
+    homebrew_packages:
+      - { name: readline }
+      - { name: openssl }
+      - { name: python }
+      - { name: python3 }
+      - { name: go }
+      - { name: git }
+      - { name: tig}
+      - { name: zsh }
+      - { name: wget }
+      - { name: curl }
+      - { name: cmake }
+      - { name: tree }
+      - { name: jq }
+      - { name: peco }
+      - { name: rbenv }
+      - { name: ruby-build }
+      - { name: multirust }
+      - { name: mysql }
+      - { name: sqlite }
+      - { name: redis }
+      - { name: packer}
+      - { name: terraform }
+      - { name: vault }
+      - { name: nomad }
+      - { name: otto }
+      - { name: highlight }
+    homebrew_cask_packages:
+      - { name: appcleaner }
+      - { name: iterm2 }
+      - { name: macdown }
+  
+  tasks:
+    - name: homebrew の tap リポジトリを追加
+      homebrew_tap: tap={{ item }} state=present
+      with_items: homebrew_taps
+    
+    - name: homebrew のアップデート、アップグレード
+      homebrew: update_homebrew=yes upgrade_all=yes
+    
+    - name: homebrew cask のアップデート、アップグレード
+      homebrew: name=brew-cask state=latest
+    
+    - name: homebrew をクリーンアップ
+      shell: brew cleanup && brew cask cleanup
+
+    - name: homebrewパッケージをインストール
+      homebrew: name={{ item.name }} state="present"
+      with_items: homebrew_packages
+      
+    - name: homebrew caskパッケージのインストール
+      homebrew_cask: name={{ item.name }} state="present"
+      with_items: homebrew_cask_packages
