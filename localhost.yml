@@ -22,6 +22,7 @@
       - { name: pyenv }
       - { name: go }
       - { name: git }
+      - { name: carthage}
       - { name: tig}
       - { name: zsh }
       - { name: wget }
