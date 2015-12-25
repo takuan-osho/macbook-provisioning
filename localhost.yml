@@ -19,6 +19,7 @@
       - { name: openssl }
       - { name: python }
       - { name: python3 }
+      - { name: pyenv }
       - { name: go }
       - { name: git }
       - { name: tig}
@@ -29,9 +30,11 @@
       - { name: tree }
       - { name: jq }
       - { name: peco }
+      - { name: ghq}
       - { name: rbenv }
       - { name: ruby-build }
       - { name: multirust }
+      - { name: dmd }
       - { name: mysql }
       - { name: sqlite }
       - { name: redis }
