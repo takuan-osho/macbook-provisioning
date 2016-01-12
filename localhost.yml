@@ -50,6 +50,7 @@
       - { name: appcleaner }
       - { name: iterm2 }
       - { name: macdown }
+      - { name: mysqlworkbench }
   
   tasks:
     - name: homebrew の tap リポジトリを追加
