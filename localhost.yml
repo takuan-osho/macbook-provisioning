@@ -51,6 +51,7 @@
       - { name: iterm2 }
       - { name: macdown }
       - { name: sequel-pro }
+      - { name: psequel}
   
   tasks:
     - name: homebrew の tap リポジトリを追加
