@@ -57,10 +57,10 @@
       homebrew_tap: tap={{ item }} state=present
       with_items: homebrew_taps
     
-    - name: homebrew のアップデート、アップグレード
-      homebrew: update_homebrew=yes upgrade_all=yes
+    - name: homebrew のアップデート
+      homebrew: update_homebrew=yes
     
-    - name: homebrew cask のアップデート、アップグレード
+    - name: homebrew cask のアップデート
       homebrew: name=brew-cask state=latest
     
     - name: homebrew をクリーンアップ
