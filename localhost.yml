@@ -64,9 +64,6 @@
     
     - name: homebrew cask のアップデート
       homebrew: name=brew-cask state=latest
-    
-    - name: homebrew をクリーンアップ
-      shell: brew cleanup && brew cask cleanup
 
     - name: homebrewパッケージをインストール
       homebrew: name={{ item.name }} state="present"
@@ -75,3 +72,6 @@
     - name: homebrew caskパッケージのインストール
       homebrew_cask: name={{ item.name }} state="present"
       with_items: homebrew_cask_packages
+    
+    - name: homebrew をクリーンアップ
+      shell: brew cleanup && brew cask cleanup
