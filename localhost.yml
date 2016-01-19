@@ -15,6 +15,7 @@
       - motemen/ghq
       - tcnksm/ghr
     homebrew_packages:
+      - { name: ansible }
       - { name: readline }
       - { name: openssl }
       - { name: iproute2mac }
