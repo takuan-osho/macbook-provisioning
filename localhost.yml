@@ -50,6 +50,7 @@
       - { name: appcleaner }
       - { name: iterm2 }
       - { name: macdown }
+      - { name: mysqlworkbench}
       - { name: sequel-pro }
       - { name: psequel}
   
