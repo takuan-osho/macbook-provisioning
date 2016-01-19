@@ -67,7 +67,7 @@
       homebrew: name=brew-cask state=latest
 
     - name: homebrewパッケージをインストール
-      homebrew: name={{ item.name }} state="present"
+      homebrew: name={{ item.name }} state="latest"
       with_items: homebrew_packages
       
     - name: homebrew caskパッケージのインストール
