@@ -36,8 +36,11 @@
       - { name: ghq}
       - { name: rbenv }
       - { name: ruby-build }
+      - { name: plenv }
+      - { name: perl-build }
       - { name: multirust }
       - { name: dmd }
+      - { name: mono }
       - { name: mysql }
       - { name: sqlite }
       - { name: redis }
@@ -47,6 +50,11 @@
       - { name: nomad }
       - { name: otto }
       - { name: highlight }
+      - { name: awscli }
+      - { name: nginx }
+      - { name: jenkins }
+      - { name: imagemagick }
+      - { name: jubatus }
     homebrew_cask_packages:
       - { name: appcleaner }
       - { name: iterm2 }
