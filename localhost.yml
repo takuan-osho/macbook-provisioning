@@ -18,6 +18,8 @@
       - { name: ansible }
       - { name: readline }
       - { name: openssl }
+      - { name: sshrc }
+      - { name: ssh-copy-id }
       - { name: iproute2mac }
       - { name: python }
       - { name: python3 }
@@ -29,6 +31,7 @@
       - { name: zsh }
       - { name: wget }
       - { name: curl }
+      - { name: nkf }
       - { name: cmake }
       - { name: tree }
       - { name: jq }
@@ -41,6 +44,7 @@
       - { name: multirust }
       - { name: dmd }
       - { name: mono }
+      - { name: sbt }
       - { name: mysql }
       - { name: sqlite }
       - { name: redis }
@@ -54,7 +58,9 @@
       - { name: nginx }
       - { name: jenkins }
       - { name: imagemagick }
+      - { name: ffmpeg }
       - { name: jubatus }
+      - { name: mongodb }
     homebrew_cask_packages:
       - { name: appcleaner }
       - { name: iterm2 }
