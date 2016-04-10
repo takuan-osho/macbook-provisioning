@@ -14,6 +14,7 @@
       - jubatus/jubatus
       - motemen/ghq
       - tcnksm/ghr
+      - cubicdaiya/nginx-build
     homebrew_packages:
       - { name: ansible }
       - { name: readline }
@@ -56,6 +57,7 @@
       - { name: highlight }
       - { name: awscli }
       - { name: nginx }
+      - { name: nginx-build }
       - { name: jenkins }
       - { name: imagemagick }
       - { name: ffmpeg }
