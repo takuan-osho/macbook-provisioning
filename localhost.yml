@@ -51,6 +51,7 @@
       - { name: redis }
       - { name: packer}
       - { name: terraform }
+      - { name: consul }
       - { name: vault }
       - { name: nomad }
       - { name: otto }
