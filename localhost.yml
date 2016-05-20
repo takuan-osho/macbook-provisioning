@@ -60,7 +60,6 @@
       - { name: awscli }
       - { name: nginx }
       - { name: nginx-build }
-      - { name: jenkins }
       - { name: imagemagick }
       - { name: ffmpeg }
       - { name: jubatus }
