@@ -26,6 +26,7 @@
       - { name: python3 }
       - { name: pyenv }
       - { name: go }
+      - { name: glide }
       - { name: git }
       - { name: carthage}
       - { name: tig}
@@ -71,22 +72,22 @@
       - { name: mysqlworkbench}
       - { name: sequel-pro }
       - { name: psequel}
-  
+
   tasks:
     - name: homebrew の tap リポジトリを追加
       homebrew_tap: tap={{ item }} state=present
       with_items: homebrew_taps
-    
+
     - name: homebrew のアップデート
       homebrew: update_homebrew=yes
-    
+
     - name: homebrew cask のアップデート
       homebrew: name=brew-cask state=latest
 
     - name: homebrewパッケージをインストール
       homebrew: name={{ item.name }} state="latest"
       with_items: homebrew_packages
-      
+
     - name: homebrew caskパッケージのインストール
       homebrew_cask: name={{ item.name }} state="present"
       with_items: homebrew_cask_packages
