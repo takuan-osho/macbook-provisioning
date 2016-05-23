@@ -38,6 +38,7 @@
       - { name: tree }
       - { name: jq }
       - { name: peco }
+      - { name: pandoc }
       - { name: ghq}
       - { name: rbenv }
       - { name: ruby-build }
