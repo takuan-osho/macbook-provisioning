@@ -27,6 +27,7 @@
       - { name: pyenv }
       - { name: go }
       - { name: glide }
+      - { name: haskell-stack }
       - { name: git }
       - { name: carthage}
       - { name: tig}
