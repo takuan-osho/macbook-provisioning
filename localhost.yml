@@ -15,6 +15,7 @@
       - motemen/ghq
       - tcnksm/ghr
       - cubicdaiya/nginx-build
+      - tkengo/highway
     homebrew_packages:
       - { name: ansible }
       - { name: readline }
@@ -34,6 +35,8 @@
       - { name: zsh }
       - { name: wget }
       - { name: curl }
+      - { name: pt }
+      - { name: highway }
       - { name: nkf }
       - { name: cmake }
       - { name: tree }
