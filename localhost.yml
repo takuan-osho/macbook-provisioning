@@ -30,6 +30,7 @@
       - { name: glide }
       - { name: haskell-stack }
       - { name: git }
+      - { name: git-secrets }
       - { name: carthage}
       - { name: tig}
       - { name: zsh }
