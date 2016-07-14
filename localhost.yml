@@ -77,6 +77,16 @@
       - { name: mysqlworkbench}
       - { name: sequel-pro }
       - { name: psequel}
+      - { name: qlcolorcode }
+      - { name: qlstephen }
+      - { name: qlmarkdown }
+      - { name: quicklook-json }
+      - { name: qlprettypatch }
+      - { name: quicklook-csv }
+      - { name: betterzipql }
+      - { name: qlimagesize }
+      - { name: webpquicklook }
+      - { name: suspicious-package }
 
   tasks:
     - name: homebrew の tap リポジトリを追加
