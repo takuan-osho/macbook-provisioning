@@ -92,7 +92,7 @@
   tasks:
     - name: homebrew の tap リポジトリを追加
       homebrew_tap: tap={{ item }} state=present
-      with_items: homebrew_taps
+      with_items: "{{ homebrew_taps }}"
 
     - name: homebrew のアップデート
       homebrew: update_homebrew=yes
@@ -106,4 +106,4 @@
 
     - name: homebrew caskパッケージのインストール
       homebrew_cask: name={{ item.name }} state="present"
-      with_items: homebrew_cask_packages
+      with_items: "{{ homebrew_cask_packages }}"
