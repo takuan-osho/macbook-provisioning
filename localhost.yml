@@ -93,17 +93,28 @@
     - name: homebrew の tap リポジトリを追加
       homebrew_tap: tap={{ item }} state=present
       with_items: "{{ homebrew_taps }}"
+      tags:
+        - core
 
     - name: homebrew のアップデート
       homebrew: update_homebrew=yes
+      tags:
+        - update
+        - core
 
     - name: homebrew cask のアップデート
       homebrew: name=brew-cask state=latest
+      tags:
+        - update
+        - cask
 
     - name: homebrewパッケージをインストール
       homebrew: name={{ item.name }} state="latest"
       with_items: "{{ homebrew_packages }}"
+        - core
 
     - name: homebrew caskパッケージのインストール
       homebrew_cask: name={{ item.name }} state="present"
       with_items: "{{ homebrew_cask_packages }}"
+      tags:
+        - cask
