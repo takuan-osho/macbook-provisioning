@@ -111,6 +111,7 @@
     - name: homebrewパッケージをインストール
       homebrew: name={{ item.name }} state="latest"
       with_items: "{{ homebrew_packages }}"
+      tags:
         - core
 
     - name: homebrew caskパッケージのインストール
