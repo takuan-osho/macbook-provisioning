@@ -49,7 +49,6 @@
       - { name: ruby-build }
       - { name: plenv }
       - { name: perl-build }
-      - { name: multirust }
       - { name: dmd }
       - { name: mono }
       - { name: sbt }
@@ -61,7 +60,6 @@
       - { name: consul }
       - { name: vault }
       - { name: nomad }
-      - { name: otto }
       - { name: highlight }
       - { name: awscli }
       - { name: nginx }
@@ -101,12 +99,6 @@
       tags:
         - update
         - core
-
-    - name: homebrew cask のアップデート
-      homebrew: name=brew-cask state=latest
-      tags:
-        - update
-        - cask
 
     - name: homebrewパッケージをインストール
       homebrew: name={{ item.name }} state="latest"
