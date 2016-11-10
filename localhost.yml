@@ -4,10 +4,8 @@
   become: no
   vars:
     homebrew_taps:
-      - altkatz/gcc_cross_compilers
       - aspnet/dnx
       - caskroom/cask
-      - fnichol/dvm
       - homebrew/binary
       - homebrew/dupes
       - homebrew/science
@@ -93,6 +91,7 @@
       with_items: "{{ homebrew_taps }}"
       tags:
         - core
+        - tap
 
     - name: homebrew のアップデート
       homebrew: update_homebrew=yes
