@@ -66,6 +66,7 @@
       - { name: graphviz }
       - { name: ffmpeg }
       - { name: mongodb }
+      - { name: elasticsearch }
     homebrew_cask_packages:
       - { name: appcleaner }
       - { name: iterm2 }
@@ -83,6 +84,7 @@
       - { name: qlimagesize }
       - { name: webpquicklook }
       - { name: suspicious-package }
+      - { name: java }
 
   tasks:
     - name: homebrew の tap リポジトリを追加
