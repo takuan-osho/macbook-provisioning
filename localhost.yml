@@ -65,7 +65,6 @@
       - { name: imagemagick }
       - { name: graphviz }
       - { name: ffmpeg }
-      - { name: jubatus }
       - { name: mongodb }
     homebrew_cask_packages:
       - { name: appcleaner }
