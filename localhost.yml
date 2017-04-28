@@ -39,6 +39,7 @@
       - { name: nkf }
       - { name: cmake }
       - { name: tree }
+      - { name: parallel }
       - { name: jq }
       - { name: peco }
       - { name: pandoc }
