@@ -27,6 +27,7 @@
       - { name: go }
       - { name: glide }
       - { name: haskell-stack }
+      - { name: opam }
       - { name: git }
       - { name: git-secrets }
       - { name: carthage}
