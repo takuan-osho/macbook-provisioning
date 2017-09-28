@@ -14,6 +14,7 @@
       - tcnksm/ghr
       - cubicdaiya/nginx-build
       - tkengo/highway
+      - oridb/homebrew-myrddin
     homebrew_packages:
       - { name: ansible }
       - { name: readline }
@@ -28,6 +29,7 @@
       - { name: glide }
       - { name: haskell-stack }
       - { name: opam }
+      - { name: myrddin }
       - { name: git }
       - { name: git-secrets }
       - { name: carthage}
