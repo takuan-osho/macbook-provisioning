@@ -34,6 +34,8 @@
       - { name: git-secrets }
       - { name: carthage}
       - { name: tig}
+      - { name: pcre2 }
+      - { name: libressl }
       - { name: zsh }
       - { name: wget }
       - { name: curl }
