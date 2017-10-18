@@ -15,6 +15,7 @@
       - cubicdaiya/nginx-build
       - tkengo/highway
       - oridb/homebrew-myrddin
+      - cloudfoundry/tap
     homebrew_packages:
       - { name: ansible }
       - { name: readline }
@@ -73,6 +74,7 @@
       - { name: ffmpeg }
       - { name: mongodb }
       - { name: elasticsearch }
+      - { name: cf-cli }
     homebrew_cask_packages:
       - { name: appcleaner }
       - { name: iterm2 }
