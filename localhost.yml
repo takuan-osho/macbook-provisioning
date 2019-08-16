@@ -5,17 +5,11 @@
   vars:
     homebrew_taps:
       - aspnet/dnx
-      - caskroom/cask
-      - homebrew/binary
-      - homebrew/dupes
-      - homebrew/science
-      - jubatus/jubatus
       - motemen/ghq
       - tcnksm/ghr
       - cubicdaiya/nginx-build
       - tkengo/highway
       - oridb/homebrew-myrddin
-      - cloudfoundry/tap
     homebrew_packages:
       - { name: ansible }
       - { name: readline }
