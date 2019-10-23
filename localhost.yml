@@ -55,7 +55,7 @@
       - { name: sqlite }
       - { name: redis }
       - { name: packer}
-      - { name: terraform }
+      - { name: tfenv }
       - { name: consul }
       - { name: vault }
       - { name: nomad }
@@ -66,7 +66,6 @@
       - { name: imagemagick }
       - { name: graphviz }
       - { name: ffmpeg }
-      - { name: mongodb }
       - { name: elasticsearch }
       - { name: cf-cli }
     homebrew_cask_packages:
